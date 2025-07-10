@@ -5,20 +5,20 @@
 class Catmit < Formula
   desc "AI powered commit message generator"
   homepage "https://github.com/penwyp/catmit"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/penwyp/catmit/releases/download/v0.0.5/catmit_0.0.5_darwin_amd64.tar.gz"
-      sha256 "21478c2d82f708bf27f6d8456019d3179440325bdc448a6997f50854799227ff"
+      url "https://github.com/penwyp/catmit/releases/download/v0.0.6/catmit_0.0.6_darwin_amd64.tar.gz"
+      sha256 "43a45115e3b0901109025258dabd66ca3a1fbf5204c78276d1ed8e4698a7fc8f"
 
       def install
         bin.install "catmit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/penwyp/catmit/releases/download/v0.0.5/catmit_0.0.5_darwin_arm64.tar.gz"
-      sha256 "21072f31f4af463a71a0f2920025203fd12a7bda5011531c47c10e7f92840b57"
+      url "https://github.com/penwyp/catmit/releases/download/v0.0.6/catmit_0.0.6_darwin_arm64.tar.gz"
+      sha256 "b0d02e89397c222cf7c43576217a80e4b92862031a983e93cd6a41840d0c7d58"
 
       def install
         bin.install "catmit"
@@ -28,15 +28,15 @@ class Catmit < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/catmit/releases/download/v0.0.5/catmit_0.0.5_linux_amd64.tar.gz"
-      sha256 "25db589a876cdb4bed1f38bdb0f84eefa0f0a74c5eeb72029469be6ebd08a465"
+      url "https://github.com/penwyp/catmit/releases/download/v0.0.6/catmit_0.0.6_linux_amd64.tar.gz"
+      sha256 "36701fc1fa5e9eb149933950e66fd71ed5447661bfe7a6f4c6b647aab2de7aa3"
       def install
         bin.install "catmit"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/catmit/releases/download/v0.0.5/catmit_0.0.5_linux_arm64.tar.gz"
-      sha256 "c6b0fa95c11b8927936f562feed66d47539d1b8c6c5866f72df62fdca9500841"
+      url "https://github.com/penwyp/catmit/releases/download/v0.0.6/catmit_0.0.6_linux_arm64.tar.gz"
+      sha256 "e352fa893a2488028d8b26439f919d1750b98a7f3724f305604efa45aca7fe0b"
       def install
         bin.install "catmit"
       end
