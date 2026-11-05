@@ -5,39 +5,39 @@
 class Catmit < Formula
   desc "AI powered commit message generator"
   homepage "https://github.com/penwyp/catmit"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.1/catmit_0.1.1_darwin_amd64.tar.gz"
-      sha256 "5510b846d7740553784732e7a983778a827773f64113402f2eda25d25364867c"
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_darwin_amd64.tar.gz"
+      sha256 "ef8bab7d8452def0f955114b2721757db8f06d68b4a315971f22e67a1b041b77"
 
-      def install
+      define_method(:install) do
         bin.install "catmit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.1/catmit_0.1.1_darwin_arm64.tar.gz"
-      sha256 "d40111ea0b8b7e541e58ed38b5d238cbf4090e0bc7fa8de0829a35985362b757"
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_darwin_arm64.tar.gz"
+      sha256 "f21d3f6374dd6a2023424f6b8e30605448ad50c12f322fb1b31aca967dc0fb64"
 
-      def install
+      define_method(:install) do
         bin.install "catmit"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.1/catmit_0.1.1_linux_amd64.tar.gz"
-      sha256 "5d93008681416fb81efe1612514323e89b9706ec134e66b9b3b45e40474f3c10"
-      def install
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_linux_amd64.tar.gz"
+      sha256 "c0c06d025cfa10d3e5fa6f42d9c9324c302f0a711244b99ff411049235ca648e"
+      define_method(:install) do
         bin.install "catmit"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.1/catmit_0.1.1_linux_arm64.tar.gz"
-      sha256 "caf38a9348e571c3d044b1821e7974d45c6b98b5140023f2fa2011cab74272b9"
-      def install
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_linux_arm64.tar.gz"
+      sha256 "d8f90e925e5d5137537f37ce0918b1be277e0b97fd91fc61b900fcca9ce9e152"
+      define_method(:install) do
         bin.install "catmit"
       end
     end
