@@ -5,20 +5,20 @@
 class Catmit < Formula
   desc "AI powered commit message generator"
   homepage "https://github.com/penwyp/catmit"
-  version "0.1.2"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_darwin_amd64.tar.gz"
-      sha256 "ef8bab7d8452def0f955114b2721757db8f06d68b4a315971f22e67a1b041b77"
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.4/catmit_0.1.4_darwin_amd64.tar.gz"
+      sha256 "8b3e44758a81fd1fe3d59b4d1df24b643afabe656a3feca1a6caee27db0a491d"
 
       define_method(:install) do
         bin.install "catmit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_darwin_arm64.tar.gz"
-      sha256 "f21d3f6374dd6a2023424f6b8e30605448ad50c12f322fb1b31aca967dc0fb64"
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.4/catmit_0.1.4_darwin_arm64.tar.gz"
+      sha256 "07538ed7fa96a4af49d95511cbb2f407f980affa83fc4e08e6d4f257e3c0c4be"
 
       define_method(:install) do
         bin.install "catmit"
@@ -28,15 +28,15 @@ class Catmit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_linux_amd64.tar.gz"
-      sha256 "c0c06d025cfa10d3e5fa6f42d9c9324c302f0a711244b99ff411049235ca648e"
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.4/catmit_0.1.4_linux_amd64.tar.gz"
+      sha256 "fd4921937401621b8d7a8282c67f3452f7db1114077d1a5a4b913b9a709ec7d4"
       define_method(:install) do
         bin.install "catmit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/penwyp/catmit/releases/download/v0.1.2/catmit_0.1.2_linux_arm64.tar.gz"
-      sha256 "d8f90e925e5d5137537f37ce0918b1be277e0b97fd91fc61b900fcca9ce9e152"
+      url "https://github.com/penwyp/catmit/releases/download/v0.1.4/catmit_0.1.4_linux_arm64.tar.gz"
+      sha256 "53f3fad47b1522d9400ce128baebc596b0650bfde4d03bd98d8cb8a32a1b5230"
       define_method(:install) do
         bin.install "catmit"
       end
